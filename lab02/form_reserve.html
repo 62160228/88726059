@@ -33,8 +33,7 @@
         </tr>
         <tr>
             <td>Name</td>
-            <td><input type="text" name="name" id="name"></td>
-            <td><input type="text" name="lname" id="lname"></td>
+            <td><input type="text" name="name" id="name"><input type="text" name="lname" id="lname"></td>
         </tr>
         <tr>
             <td>Email</td>
@@ -42,7 +41,30 @@
         </tr>
         <tr>
             <td>Arrival</td>
-            <td><input type="text" name="arrivaldate" id="arrivaldate"></td>
-            <td><input type="text" name="arrivaltime" id="arrivaltime"></td>
+            <td><input type="date" name="arrivaldate" id="arrivaldate"><input type="time" name="arrivaltime" id="arrivaltime"></td>
         </tr>
+        <tr>
+            <td>departure</td>
+            <td><input type="date" name="departuredate" id="departuredate"><input type="time" name="departuredtime" id="departuredtime"></td>
+        </tr>
+        <tr>
+            <td>Free Pickup</td>
+            <td><input type="radio" name="pickup" id="pickup" value="Yes">Yes Sure!<br>
+            <input type="radio" name="pickup" id="pickup" value="No">No I already rented a car.</td>
+        </tr>
+        <tr>
+            <td>Flight Number</td>
+            <td><input type="text" name="Flightnum" id="Flightnum"></td>
+        </tr>
+        <tr>
+            <td>Other Requests</td>
+            <td><Textarea name="commmet" id="Other Requests" rows="5" cols="50"></Textarea></td>
+        </tr>
+        <tr>
+            <th></th>
+            <th> <input type="submit" value="Complete Reservation">
+        </tr>
+</form>
+</body>
+</html>
 
