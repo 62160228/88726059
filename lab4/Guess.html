@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    rn=Math.floor(Math.random()*10);
+    function Guess(n){
+        n=document.getElementById('number').value
+        if(n == rn){
+            document.getElementById("disp").innerHTML = "True";
+            document.getElementById('hist').innerHTML += n+" ";
+        }
+        else if (n<rn){
+            document.getElementById("disp").innerHTML = "Too little";
+            document.getElementById("hist").innerHTML += n+" ";
+        }
+        else if (n>rn){
+            document.getElementById("disp").innerHTML = "Too much";
+            document.getElementById("hist").innerHTML += n+" ";
+        }
+    }
+    function startover(){
+        rn=Math.floor(Math.random()*10);
+        div=document.getElementById('disp');
+        div.innerHTML = " ";
+        h= document.getElementById('hist');
+        h.innerHTML = " ";
+    }
+</script>
+<body>
+    <input type="number" id="number">
+    <button onclick="Guess(this.value);" id="number">Guess</button>
+    <div id="disp"></div>
+    <h id="hist"></h><br>
+    <button onclick="startover()">Start Over</button>
+</body>
+</html>
