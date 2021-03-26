@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>converter BMI</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<script>
+      var input_weight;  // ประกาศตัวแปรเพื่อเก็บค่าน้ำหนักที่ผู้ใช้กรอก
+      var input_hight;  // ประกาศตัวแปรเพื่อเก็บค่าส่วนสูงที่ผู้ใช้กรอก  
+      var weight;  // ประกาศตัวแปรเพื่อเก็บค่าน้ำหนักที่แปลงค่าเป็นfloat
+      var hight;  // ประกาศตัวแปรเพื่อเก็บค่าส่วนสูงที่แปลงค่าเป็นfloat
+      var BMI; // ค่าดัชนีมวลกายที่ได้จากการคำนวณแล้ว
+      var check_BMI; //ค่าดัชนีมวลกายที่มีทศนิยม 1 ตำแหน่ง
+
+      // คำสั่งที่ใช้แสดงกล่องข้อความซึ่งให้ผู้ใช้กรอกน้ำหนัก
+      input_weight = window.prompt( "Enter weight(kg.)" );
+
+      // / คำสั่งที่ใช้แสดงกล่องข้อความซึ่งให้ผู้ใช้กรอกส่วนสูง
+      input_hight = window.prompt( "Enter hight(cm.)" );
+
+      // การแปลงค่าให้เป็น  Float
+      weight = parseFloat( input_weight ); 
+      hight = parseFloat( input_hight );
+      
+      BMI = weight/((hight/100)*(hight/100)); // สูตรการคำนวณBMI
+   check_BMI=BMI.toFixed(1);//ทำให้มีทศนิยม 1 11  ตำแหน่ง
+
+      // การเปรียบเทียบค่า BMI         กับเกณฑ์ที่กำหนด
+      document.writeln( "<h2>BMI is : " + check_BMI+ "</h2>" );
+ if(check_BMI<18.5){
+ document.writeln("<h3>"+"You thin!!"+"</h3>");
+}else  if(check_BMI>=18.5&&check_BMI<25){
+ document.writeln("<h1>"+"You slim ^_^'"+"</h1>");
+}else  if(check_BMI>=25&&check_BMI<30){
+ document.writeln("<h4>"+"You overweight ToT"+"</h4>");
+}else  if(check_BMI>=30&&check_BMI<40){
+ document.writeln("<h5>"+"You fat T^T"+"</h5>");
+}else{
+ document.writeln("<h6>"+"You very fat!!"+"</h6>");
+}
+   </script>
+<body>
+      
+</body>
+</html>

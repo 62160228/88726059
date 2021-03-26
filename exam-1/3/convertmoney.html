@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function convert(n){
+        n=document.getElementById("number").value
+        document.getElementById("result").innerHTML=""
+    if(n<1000){
+        count = n;
+        document.getElementById("result").innerHTML+="แบ๊ง1000 : "+"<br>"
+    }
+    if(n>=1000){
+        B1000 = Math.floor(n/1000);
+        n=n-(1000*B1000);
+        document.getElementById("result").innerHTML+="แบ๊ง1000 : "+B1000+" ใบ "+"<br>"
+    }
+    if(n<500){
+        count = n;
+        document.getElementById("result").innerHTML+="แบ๊ง500 : "+"<br>"
+    }
+    if(n>=500){
+        B500 = Math.floor(n/500);
+        n=n-(500*B500);
+        document.getElementById("result").innerHTML+="แบ๊ง500 : "+B500+" ใบ "+"<br>"
+    }
+    if(n<100){
+        count = n;
+        document.getElementById("result").innerHTML+="แบ๊ง100 : "+"<br>"
+    }
+    if(n>=100){
+        B100 = Math.floor(n/100);
+        n=n-(100*B100);
+        document.getElementById("result").innerHTML+="แบ๊ง100 : "+B100+" ใบ "+"<br>"
+    }
+    if(n<50){
+        count = n;
+        document.getElementById("result").innerHTML+="แบ๊ง50 : "+"<br>"
+    }
+    if(n>=50){
+        B50 = Math.floor(n/50);
+        n=n-(50*B50);
+        document.getElementById("result").innerHTML+="แบ๊ง50 : "+B50+" ใบ "+"<br>"
+    }
+    if(n<20){
+        count = n;
+        document.getElementById("result").innerHTML+="แบ๊ง20 : "+"<br>"
+    }
+    if(n>=20){
+        B20 = Math.floor(n/20);
+        n=n-(20*B20);
+        document.getElementById("result").innerHTML+="แบ๊ง20 : "+B20+" ใบ "+"<br>"
+    }
+    if(n<10){
+        count = n;
+        document.getElementById("result").innerHTML+="เหรียญ10 : "+"<br>"
+    }
+    if(n>=10){
+        B10 = Math.floor(n/10);
+        n=n-(10*B10);
+        document.getElementById("result").innerHTML+="เหรียญ10 : "+B10+" เหรียญ "+"<br>"
+    }
+    if(n<5){
+        count = n;
+        document.getElementById("result").innerHTML+="เหรียญ5 : "+"<br>"
+    }
+    if(n>=5){
+        B5 = Math.floor(n/5);
+        n=n-(5*B5);
+        document.getElementById("result").innerHTML+="เหรียญ5 : "+B5+" เหรียญ "+"<br>"
+    }
+    if(n<2){
+        count = n;
+        document.getElementById("result").innerHTML+="เหรียญ2 : "+"<br>"
+    }
+    if(n>=2){
+        B2 = Math.floor(n/2);
+        n=n-(2*B2);
+        document.getElementById("result").innerHTML+="เหรียญ2 : "+B2+" เหรียญ "+"<br>"
+    }
+    if(n<1){
+        count = n;
+        document.getElementById("result").innerHTML+="เหรียญ1 : "+"<br>"
+    }
+    if(n>=1){
+        B1 = Math.floor(n/1);
+        n=n-(1*B1);
+        document.getElementById("result").innerHTML+="เหรียญ1 : "+B1+" เหรียญ "+"<br>"
+    }
+
+}
+</script>
+<body>
+    <input type="number" id="number">
+    <button onclick="convert(this.value)" id="number">guess</button>
+    <div id="result"></div>
+</body>
+</html>

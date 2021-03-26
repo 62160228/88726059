@@ -1,0 +1,28 @@
+body {
+    background-color:rgb(197, 210, 231);
+}
+h1{
+    color: darkblue;
+}
+h2{
+    color: rgb(255, 0, 0);
+}
+h3{
+    color: rgb(110, 10, 94);
+}
+h4{
+    color: rgb(28, 180, 240);
+}
+h5{
+    color: rgb(5, 77, 26);
+}
+h6{
+    color: rgb(225, 248, 19);
+}
+br{
+    font-size: 20px;
+    font-family: Tahoma;
+}
+#window.prompt{
+    color: darkgoldenrod;
+}

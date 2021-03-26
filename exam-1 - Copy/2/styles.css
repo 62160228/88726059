@@ -1,0 +1,29 @@
+body {
+    background-color:rgb(197, 210, 231);
+}
+#name{
+    color: rgb(57, 39, 216);
+}
+#number{
+   color: rgb(14, 12, 29); 
+}
+#bd{
+    color: brown;
+}
+#link{
+    color: rgb(201, 31, 31);
+}
+.abc{
+    color: rgb(53, 47, 70);
+}
+a.dfg{
+    color: darkcyan;
+}
+br{
+    font-size: 12px;
+    font-family: Tahoma;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
